@@ -56,9 +56,9 @@ const Home = () => {
             style={{ minWidth: '320px', height: '1000px' }} />
         </div>
       <FeaturesTiles />
-      <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
-      <Testimonial topDivider />
-      <Cta split />
+      {/* <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
+      <Testimonial topDivider /> */}
+      {/* <Cta split /> */}
     </>
   );
 }

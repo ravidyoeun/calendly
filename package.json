@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "home": ".",
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
   "dependencies": {
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
