@@ -70,7 +70,7 @@ Discover design options, full kitchen vignettes, and experience 336 years of cra
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="https://cruip.com/">
+                  <Button tag="a" color="primary" wideMobile href="#schedule_form">
                     Schedule Today
                     </Button>
                   {/* <Button tag="a" color="dark" wideMobile href="https://github.com/cruip/open-react-template/">
