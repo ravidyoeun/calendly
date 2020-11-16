@@ -58,7 +58,7 @@ const Home = () => {
             alt="Open"
             width={148}
             height={22} /> */}
-          <Navbar.Brand href='#home'>
+          <Navbar.Brand href='https://wwww.gaggenau.com/us' target='_blank'>
             <img
               alt=''
               src={require("../assets/images/gaggenau-logo.png")}
@@ -75,15 +75,15 @@ const Home = () => {
       <Jumbotron
         style={{
           backgroundImage:
-            "url('https://media3.gaggenau.com/Images/4000x/MCIM03017342_cs-stage-vp3.jpg')",
+            "url('https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png')",
           backgroundSize: "100% 100%",
           height: "100vh",
         }}
       >
         <Container>
           <div>
-            <h2 style={{ backgroundColor: "#000" }}>
-              <font>Book your intervention request online</font>
+            <h2 style={{ backgroundColor: "#000", textAlign: "center" }}>
+              <font>Book Your Virtual Professional Introduction</font>
             </h2>
             {/* <h2 className="heroText" style={{backgroundColor: '#000', width: '60%'}}><font>Book your intervention request online</font></h2> */}
           </div>
