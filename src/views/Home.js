@@ -97,21 +97,15 @@ const Home = () => {
               <div
                 className='calendly-inline-widget'
                 data-url={dynamicCalendarUrl}
-                style={{ minWidth: "320px", height: "1000px" }}
+                style={{ minWidth: "320px", height: "670px" }}
               />
             </div>
-            <h4>
-              Book easily and quickly with a Gaggenau technician in just a few
-              clicks.
-            </h4>
+
             <p>
-              By calling on the official Gaggenau after-sales service, you are
-              guaranteed a quality repair carried out by an expert, permanently
-              trained on our devices. In addition, we only use original parts,
-              certified by our brand in order to guarantee the reliability of
-              our repairs.
+              Experience the Gaggenau Difference from the comfort of your home.
+              We are here to assist you in enjoying the full benefits of your
+              new Gaggenau purchase.
             </p>
-            <h4>To start my reservation:</h4>
           </Col>
         </Row>
       </Container>
