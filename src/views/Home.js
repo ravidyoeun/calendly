@@ -73,6 +73,7 @@ const Home = () => {
       {/* <Hero className="illustration-section-01" /> */}
 
       <Jumbotron
+        fluid
         style={{
           backgroundImage:
             "url('https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png')",
