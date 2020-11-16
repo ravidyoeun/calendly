@@ -8,7 +8,7 @@ const FooterSocial = ({ className, ...props }) => {
     <div {...props} className={classes}>
       <ul className='list-reset'>
         <li>
-          <a href='https://www.pinterest.de/gaggenau_/'>
+          <a href='https://www.pinterest.de/gaggenau_/' target='_blank'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='24'
@@ -24,7 +24,7 @@ const FooterSocial = ({ className, ...props }) => {
           </a>
         </li>
         <li>
-          <a href='https://www.instagram.com/gaggenauofficial/'>
+          <a href='https://www.instagram.com/gaggenauofficial/' target='_blank'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='24'
@@ -36,7 +36,7 @@ const FooterSocial = ({ className, ...props }) => {
           </a>
         </li>
         <li>
-          <a href='https://www.youtube.com/gaggenauofficial'>
+          <a href='https://www.youtube.com/gaggenauofficial' target='_blank'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='24'
