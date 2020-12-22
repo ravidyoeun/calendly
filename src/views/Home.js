@@ -142,7 +142,7 @@ const Home = () => {
         </Row>
         <Row>
           <Col>
-            <h4>Start the conversation on + 61 3 8551 1399 </h4>
+            <h4>Start the conversation on 949.724.3575</h4>
             <p> Visit </p>
             <p>
               192-196 Coventry <br></br> St South Melbourne 3205{" "}
@@ -150,7 +150,7 @@ const Home = () => {
             <p> Opening hours </p>
             <p>
               {" "}
-              Monday – Friday 10am to 4pm <br></br> Closed on Weekends and
+              Monday – Friday 10am to 5pm (PST) <br></br> Closed on Weekends and
               Public Holidays.
             </p>
             <p>
