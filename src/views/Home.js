@@ -93,6 +93,32 @@ const Home = () => {
 
       <Container>
         <Row>
+          <h4> Gaggenau Melbourne</h4>
+          Nestled in the iconic South Melbourne precinct, Gaggenau Melbourne
+          takes pride in one of Melbourne’s landmark locations. Drawing
+          inspiration from its location, the space seamlessly integrates into
+          the local culture and complements the surrounding architecture.
+          Discover the space that is dedicated to inspiring customers, designers
+          and architects. Important Message: With the easing of restrictions,
+          Gaggenau Melbourne is currently open by appointment only. To ensure a
+          clean, safe environment for customers and staff, we’re continuing our
+          safety measures, including contactless temperature check on arrival,
+          providing fresh face coverings, limiting number of visitors,
+          maintaining 1.5 meters for social distancing and continuous deep
+          cleaning. If you prefer, we can also conduct your appliance
+          consultation over the phone. Simply choose your preferred appointment
+          type from the menu below.
+          <h4>Important Message:</h4>
+          With the easing of restrictions, Gaggenau Melbourne is currently open
+          by appointment only. To ensure a clean, safe environment for customers
+          and staff, we’re continuing our safety measures, including contactless
+          temperature check on arrival, providing fresh face coverings, limiting
+          number of visitors, maintaining 1.5 meters for social distancing and
+          continuous deep cleaning. If you prefer, we can also conduct your
+          appliance consultation over the phone. Simply choose your preferred
+          appointment type from the menu below.
+        </Row>
+        <Row>
           <Col>
             <div id='schedule_form'>
               <div
@@ -101,12 +127,36 @@ const Home = () => {
                 style={{ minWidth: "320px", height: "670px" }}
               />
             </div>
-
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <h4>Start the conversation on + 61 3 8551 1399 </h4>
+            <p> Visit </p>
             <p>
-              Experience the Gaggenau Difference from the comfort of your home.
-              We are here to assist you in enjoying the full benefits of your
-              new Gaggenau purchase.
+              192-196 Coventry <br></br> St South Melbourne 3205{" "}
             </p>
+            <p> Opening hours </p>
+            <p>
+              {" "}
+              Monday – Friday 10am to 4pm <br></br> Closed on Weekends and
+              Public Holidays.
+            </p>
+            <p>
+              Parking is available at Clarendon Center, 261 Clarendon Street,
+              South Melbourne (entry via Coventry Street). The first 90 minutes
+              are free. Fees apply for each subsequent hour. Alternatively,
+              there are 1P and 2P ticketed parking bays surrounding the
+              showroom.
+            </p>
+          </Col>
+          <Col>
+            <img
+              class=' lazyloaded'
+              style={{ width: "100%" }}
+              src='//media3.gaggenau.com/Images/600x/12776044_GG_showroom_map.jpg'
+              data-src='//media3.gaggenau.com/Images/600x/12776044_GG_showroom_map.jpg'
+            ></img>
           </Col>
         </Row>
       </Container>
