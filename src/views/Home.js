@@ -77,15 +77,26 @@ const Home = () => {
         style={{
           backgroundImage:
             "url('https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png')",
-          backgroundSize: "100% 100%",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
           height: "100vh",
         }}
       >
         <Container>
           <div>
-            <h2 style={{ backgroundColor: "#000", textAlign: "center" }}>
+            <h3
+              style={{
+                backgroundColor: "#000",
+                textAlign: "left",
+                marginTop: "90%",
+                left: "10px",
+                maxWidth: "60%",
+                padding: "30px",
+              }}
+            >
               <font>Book Your Virtual Professional Introduction</font>
-            </h2>
+            </h3>
             {/* <h2 className="heroText" style={{backgroundColor: '#000', width: '60%'}}><font>Book your intervention request online</font></h2> */}
           </div>
         </Container>
@@ -153,7 +164,7 @@ const Home = () => {
           <Col>
             <img
               class=' lazyloaded'
-              style={{ width: "100%" }}
+              style={{ paddingTop: "75px" }}
               src='//media3.gaggenau.com/Images/600x/12776044_GG_showroom_map.jpg'
               data-src='//media3.gaggenau.com/Images/600x/12776044_GG_showroom_map.jpg'
             ></img>
