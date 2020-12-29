@@ -204,7 +204,13 @@ const Home = () => {
               If you are within your first year of Gaggenau ownership and would
               like one-on-one virtual assistance, we would be happy to arrange
               this. Simply call our Concierge Service, 949.724.3575, or email
-              GaggenauConcierge@bshg.com.
+              <a
+                href='mailto:GaggenauConcierge@bshg.com'
+                target='_blank'
+                class='a-link a-link-external   a-link-inline'
+              >
+                <span class='text'>GaggenauConcierge@bshg.com</span>
+              </a>
             </p>
           </Col>
         </Row>
