@@ -199,6 +199,7 @@ const Home = () => {
       <Container>
         <Row>
           <Col style={{ paddingTop: "40px" }}>
+            <h2>Contact us</h2>
             <p>
               If you are within your first year of Gaggenau ownership and would
               like one-on-one virtual assistance, we would be happy to arrange

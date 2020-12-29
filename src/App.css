@@ -32821,7 +32821,7 @@ body.pagetype-campaign
     bottom: -40px;
   }
   .m-stage .teaser h2.a-heading {
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: -0.566667px;
     line-height: 42px;
   }
@@ -38660,4 +38660,16 @@ body.pagetype-product-detail
   border: none;
   margin: 0;
   padding: 0;
+} 
+@media (min-width: 641px){
+    h2, .h2 {
+        font-size: 30px;
+    }
+
+    div > h2 {
+        font-size: 30px;
+    }
+}
+h2, .h2 {
+    font-size: 30px;
 }
