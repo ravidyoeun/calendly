@@ -76,7 +76,11 @@ const Home = () => {
           <header class='o-header o-header-sticky g-layout-full stage'>
             <div class='header-elements g-col'></div>
             <div class='identifier-logo'>
-              <a href='https://wwww.gaggenau.com/us' class='a-logo'>
+              <a
+                href='https://wwww.gaggenau.com/us'
+                class='a-logo'
+                target='_blank'
+              >
                 <div class='a-image'>
                   <picture>
                     <img
