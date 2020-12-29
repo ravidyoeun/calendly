@@ -32794,7 +32794,29 @@ body.pagetype-campaign
     margin-top: 30px;
   }
 }
-@media (min-width: 200px) {
+
+@media (min-width: 375px) {
+  .m-stage .teaser.bottom-left {
+    bottom: 29%;
+    left: 6%;
+  }
+  .m-stage .teaser h2.a-heading {
+    font-size: 20px;
+    letter-spacing: -0.566667px;
+  }
+  .m-stage .teaser {
+    background: #000;
+    bottom: auto;
+    left: auto;
+    padding: 15px 20px 10px;
+    position: absolute;
+    right: auto;
+    top: auto;
+    width: 326px;
+  }
+}
+
+@media (min-width: 500px) {
   .m-stage .a-paginationdots {
     bottom: -40px;
   }
