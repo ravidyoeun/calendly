@@ -6,6 +6,8 @@ import FeaturesSplit from "../components/sections/FeaturesSplit";
 import Testimonial from "../components/sections/Testimonial";
 import Cta from "../components/sections/Cta";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 import { Jumbotron, Image, Container, Navbar, Row, Col } from "react-bootstrap";
 const Home = () => {
   const [dynamicCalendarUrl, setCalendarUrl] = useState(
@@ -47,17 +49,19 @@ const Home = () => {
     var daysLeft = EndOfMonth - TodaysDate;
     return daysLeft;
   };
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <>
-      <>
-        <Navbar style={{ height: 127 }}>
-          {/* <Image
-          src={require('./../../../assets/images/gaggenau-#000.png')}
-            // src={require('./../../../assets/images/#000.svg')}
-            alt="Open"
-            width={148}
-            height={22} /> */}
+      <div class='g-container'>
+        <>
+          {/* <Navbar style={{ height: 127 }}>
+
           <Navbar.Brand href='https://wwww.gaggenau.com/us' target='_blank'>
             <img
               alt=''
@@ -68,74 +72,167 @@ const Home = () => {
             />{" "}
             React Bootstrap
           </Navbar.Brand>
-        </Navbar>
-      </>
+        </Navbar> */}
+          <header class='o-header o-header-sticky g-layout-full stage'>
+            <div class='header-elements g-col'></div>
+            <div class='identifier-logo'>
+              <a href='https://wwww.gaggenau.com/us' class='a-logo'>
+                <div class='a-image'>
+                  <picture>
+                    <img
+                      alt=''
+                      src={require("../assets/images/gaggenau-logo.png")}
+                      style={{ width: "auto" }}
+                      alt='Open'
+                    />
+                  </picture>
+                </div>
+              </a>
+            </div>
+            <div class='nav-wrap'>
+              <div class='search-form'></div>
+              <div class='m-navmain'>
+                <div class='button-menu js-mobile-menu-toggle'></div>
+                <div class='navigation'>
+                  <div class='js-nav-header nav-header hidden-desktop'>
+                    <div class='previous'>
+                      <a href='#' class='a-link has-icon js-previous-link'>
+                        <i class='icon icon-arrow-left'></i>
+                        <span class='text'>Home</span>
+                      </a>
+                    </div>
+                    <div class='js-title-identifier title-identifier'></div>
+                    <div class='overview'>
+                      <a href='#' class='a-link js-overview-link'>
+                        <span class='text'>Overview</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <nav>
+                    <ul class='first-level list-unstyled'>
+                      <li class=''></li>
+
+                      <li class=''>
+                        <a
+                          href='/us/for-owners'
+                          class='a-link has-child-level'
+                          data-link-hierarchy='For owners'
+                        >
+                          <span class='text'></span>
+                        </a>
+                      </li>
+                      <li class=''></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+
+            <div class='header-content g-col'>
+              <div class='own-stage'>
+                <div class='m-stage'>
+                  <Carousel
+                    showArrows={false}
+                    showStatus={false}
+                    showIndicators={false}
+                    infiniteLoop={false}
+                    useKeyboardArrows={false}
+                    swipeable={false}
+                    showThumbs={false}
+                    autoPlay={false}
+                    dynamicHeight={true}
+                  >
+                    <div>
+                      <img src='https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png' />
+
+                      <div class='teaser bottom-left'>
+                        <h2 class='a-heading'>
+                          Book Your Virtual Professional Introduction
+                        </h2>
+                      </div>
+                      {/* <p className='legend'>Book your invervention request online</p> */}
+                    </div>
+                  </Carousel>
+                </div>
+              </div>
+            </div>
+          </header>
+        </>
+      </div>
       {/* <Hero className="illustration-section-01" /> */}
 
-      <Jumbotron
-        fluid
-        style={{
-          backgroundImage:
-            "url('https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png')",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          height: "100vh",
-        }}
-      >
-        <Container>
-          <div>
-            <h3
-              style={{
-                backgroundColor: "#000",
-                textAlign: "left",
-                marginTop: "90%",
-                left: "10px",
-                maxWidth: "60%",
-                padding: "30px",
-              }}
-            >
-              <font>Book Your Virtual Professional Introduction</font>
-            </h3>
-            {/* <h2 className="heroText" style={{backgroundColor: '#000', width: '60%'}}><font>Book your intervention request online</font></h2> */}
-          </div>
-        </Container>
-      </Jumbotron>
+      {/* <Jumbotron
+          fluid
+          style={{
+            backgroundImage:
+              "url('https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png')",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            height: "100vh",
+          }}
+        >
+          <Container>
+            <div>
+              <h3
+                style={{
+                  backgroundColor: "#000",
+                  textAlign: "left",
+                  marginTop: "90%",
+                  left: "10px",
+                  maxWidth: "60%",
+                  padding: "30px",
+                }}
+              >
+                <font>Book Your Virtual Professional Introduction</font>
+              </h3>
+     
+            </div>
+          </Container>
+        </Jumbotron> */}
 
       <Container>
         <Row>
-          <h4> Gaggenau Melbourne</h4>
-          Nestled in the iconic South Melbourne precinct, Gaggenau Melbourne
-          takes pride in one of Melbourne’s landmark locations. Drawing
-          inspiration from its location, the space seamlessly integrates into
-          the local culture and complements the surrounding architecture.
-          Discover the space that is dedicated to inspiring customers, designers
-          and architects. Important Message: With the easing of restrictions,
-          Gaggenau Melbourne is currently open by appointment only. To ensure a
-          clean, safe environment for customers and staff, we’re continuing our
-          safety measures, including contactless temperature check on arrival,
-          providing fresh face coverings, limiting number of visitors,
-          maintaining 1.5 meters for social distancing and continuous deep
-          cleaning. If you prefer, we can also conduct your appliance
-          consultation over the phone. Simply choose your preferred appointment
-          type from the menu below.
-          <h4>Important Message:</h4>
-          With the easing of restrictions, Gaggenau Melbourne is currently open
-          by appointment only. To ensure a clean, safe environment for customers
-          and staff, we’re continuing our safety measures, including contactless
-          temperature check on arrival, providing fresh face coverings, limiting
-          number of visitors, maintaining 1.5 meters for social distancing and
-          continuous deep cleaning. If you prefer, we can also conduct your
-          appliance consultation over the phone. Simply choose your preferred
-          appointment type from the menu below.
+          <Col>
+            {" "}
+            <h4> Gaggenau Melbourne</h4>
+            Nestled in the iconic South Melbourne precinct, Gaggenau Melbourne
+            takes pride in one of Melbourne’s landmark locations. Drawing
+            inspiration from its location, the space seamlessly integrates into
+            the local culture and complements the surrounding architecture.
+            Discover the space that is dedicated to inspiring customers,
+            designers and architects. Important Message: With the easing of
+            restrictions, Gaggenau Melbourne is currently open by appointment
+            only. To ensure a clean, safe environment for customers and staff,
+            we’re continuing our safety measures, including contactless
+            temperature check on arrival, providing fresh face coverings,
+            limiting number of visitors, maintaining 1.5 meters for social
+            distancing and continuous deep cleaning. If you prefer, we can also
+            conduct your appliance consultation over the phone. Simply choose
+            your preferred appointment type from the menu below.
+            <h4>Important Message:</h4>
+            With the easing of restrictions, Gaggenau Melbourne is currently
+            open by appointment only. To ensure a clean, safe environment for
+            customers and staff, we’re continuing our safety measures, including
+            contactless temperature check on arrival, providing fresh face
+            coverings, limiting number of visitors, maintaining 1.5 meters for
+            social distancing and continuous deep cleaning. If you prefer, we
+            can also conduct your appliance consultation over the phone. Simply
+            choose your preferred appointment type from the menu below.
+          </Col>
         </Row>
         <Row>
           <Col>
             <div id='schedule_form'>
               <div
                 className='calendly-inline-widget'
-                data-url={dynamicCalendarUrl}
-                style={{ minWidth: "320px", height: "670px" }}
+                data-url='https://www.seera.de/bsh-us/registration.php?backend=1&eid=100740&step=1'
+                style={{
+                  minWidth: "320px",
+                  height: "1218px",
+                  paddingTop: "40px",
+                }}
               />
             </div>
           </Col>
