@@ -238,7 +238,7 @@ const Home = () => {
           <div class='contentteaser-wrap a-area a-area-secondary a-area-mobile a-area-tablet a-area-desktop media-right'>
             <div class='media'>
               <div class='media-inner'>
-                <a href='/us/experience/showrooms'>
+                <a href='https://www.gaggenau.com/us/experience/showrooms'>
                   <div class='a-image' data-t-name='Image' data-t-id='41'>
                     <picture>
                       <img
