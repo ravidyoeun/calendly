@@ -9,10 +9,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Jumbotron, Image, Container, Navbar, Row, Col } from "react-bootstrap";
+import TargetScroller from "react-target-scroller";
+
 const Home = () => {
   const [dynamicCalendarUrl, setCalendarUrl] = useState(
     "https://calendly.com/bshpersona/irvine?primary_color=e37222"
   );
+
+  const [scrollTarget, setScrollTarget] = useState(null);
   // <div class="calendly-inline-widget" data-url="https://calendly.com/bshpersona/bosch-calendar?primary_color=e37222" style="min-width:320px;height:630px;"></div>
   // <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
   useEffect(() => {
@@ -175,74 +179,128 @@ const Home = () => {
                   >
                     <div>
                       {/* <img src='https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png' /> */}
-                      <img src={require("../assets/images/Image-ipad.png")} />
+                      <img
+                        src={require("../assets/images/Image-ipad.png")}
+                        style={{ maxHeight: "960px" }}
+                      />
 
                       <div class='teaser bottom-left'>
-                        <h2 class='a-heading'>
+                        <h2
+                          class='a-heading'
+                          style={{ fontSize: "40px", fontWeight: 700 }}
+                        >
                           Book Your Virtual Professional In-Home Introduction
                         </h2>
                       </div>
                       {/* <p className='legend'>Book your invervention request online</p> */}
                     </div>
                   </Carousel>
+                  <div
+                    class='m-scrolldown js-scrolldown hidden-mobile is-active'
+                    data-t-name='ScrollDown'
+                    data-scrolldown-tolerance='50'
+                    data-scroll-offset='80'
+                    data-t-id='21'
+                    target='#schedule_form'
+                  >
+                    <span class='scrolldown-text'>Scroll down</span>
+                    <span class='scrolldown-arrow'></span>
+                  </div>
                 </div>
               </div>
             </div>
           </header>
         </>
-      </div>
-      {/* <Hero className="illustration-section-01" /> */}
-
-      {/* <Jumbotron
-          fluid
-          style={{
-            backgroundImage:
-              "url('https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png')",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            height: "100vh",
-          }}
-        >
-          <Container>
-            <div>
-              <h3
-                style={{
-                  backgroundColor: "#000",
-                  textAlign: "left",
-                  marginTop: "90%",
-                  left: "10px",
-                  maxWidth: "60%",
-                  padding: "30px",
-                }}
-              >
-                <font>Book Your Virtual Professional Introduction</font>
-              </h3>
-     
-            </div>
-          </Container>
-        </Jumbotron> */}
-
-      <Container>
         <Col style={{ paddingTop: "40px" }}>
-          <p>
-            Experience the Gaggenau Difference from the comfort of your home. We
-            are here to assist you in enjoying the full benefits of your new
-            Gaggenau purchase.
-          </p>
-          <p>
-            With the virtual assistance of a Gaggenau Ambassador, via Zoom or
-            FaceTime, we will share features and suggestions that will inspire
-            you— the home chef — to create masterpieces.{" "}
-          </p>
-          <p style={{ fontStyle: "italic" }}>
-            This service is only available within the first year of client
-            ownership from installations.
-          </p>
-          <p>The difference is Gaggenau.</p>
-        </Col>
+          <div id='content'>
+            <div
+              class='m-contenttextmedia '
+              data-t-name='ContentTextMedia'
+              data-media-float='right'
+              id='anc-9496920'
+              data-t-id='27'
+            >
+              <div class='content'>
+                <div class='heading'>
+                  {/* <h2 class='a-heading'>Art of the kitchen</h2> */}
+                </div>
+                <div class='content-inner'>
+                  <div
+                    class='js-moreless'
+                    data-moreless-config='ContentTextMedia'
+                    data-external-resize-control='true'
+                  >
+                    <div class='text js-content'>
+                      <p>
+                        Experience the Gaggenau Difference from the comfort of
+                        your home. We are here to assist you in enjoying the
+                        full benefits of your new Gaggenau purchase.
+                      </p>
+                      <p>
+                        With the virtual assistance of a Gaggenau Ambassador,
+                        via Zoom or FaceTime, we will share features and
+                        suggestions that will inspire you— the home chef — to
+                        create masterpieces.{" "}
+                      </p>
+                      <p style={{ fontStyle: "italic" }}>
+                        This service is only available within the first year of
+                        client ownership from installations.
+                      </p>
+                      <p>The difference is Gaggenau.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='media'>
+                <div class='media-inner'>
+                  <div class='a-image' data-t-name='Image' data-t-id='28'>
+                    <picture>
+                      <source
+                        media='(min-width:900px)'
+                        data-srcset='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.webp, //media3.gaggenau.com/Images/1200x/MCIM02561106_1x1-black-transparent.webp 2x'
+                        type='image/webp'
+                        srcset='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.webp, //media3.gaggenau.com/Images/1200x/MCIM02561106_1x1-black-transparent.webp 2x'
+                      />
+                      <source
+                        media='(min-width:900px)'
+                        data-srcset='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.jpg, //media3.gaggenau.com/Images/1200x/MCIM02561106_1x1-black-transparent.jpg 2x'
+                        type='image/jpeg'
+                        srcset='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.jpg, //media3.gaggenau.com/Images/1200x/MCIM02561106_1x1-black-transparent.jpg 2x'
+                      />
+                      <source
+                        media='(min-width:600px)'
+                        data-srcset='//media3.gaggenau.com/Images/450x/MCIM02561106_1x1-black-transparent.webp, //media3.gaggenau.com/Images/900x/MCIM02561106_1x1-black-transparent.webp 2x'
+                        type='image/webp'
+                        srcset='//media3.gaggenau.com/Images/450x/MCIM02561106_1x1-black-transparent.webp, //media3.gaggenau.com/Images/900x/MCIM02561106_1x1-black-transparent.webp 2x'
+                      />
+                      <source
+                        media='(min-width:600px)'
+                        data-srcset='//media3.gaggenau.com/Images/450x/MCIM02561106_1x1-black-transparent.jpg, //media3.gaggenau.com/Images/900x/MCIM02561106_1x1-black-transparent.jpg 2x'
+                        type='image/jpeg'
+                        srcset='//media3.gaggenau.com/Images/450x/MCIM02561106_1x1-black-transparent.jpg, //media3.gaggenau.com/Images/900x/MCIM02561106_1x1-black-transparent.jpg 2x'
+                      />
+                      <source
+                        data-srcset='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.webp, //media3.gaggenau.com/Images/1200x/MCIM02561106_1x1-black-transparent.webp 2x'
+                        type='image/webp'
+                        srcset='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.webp, //media3.gaggenau.com/Images/1200x/MCIM02561106_1x1-black-transparent.webp 2x'
+                      />
+                      <source
+                        data-srcset='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.jpg, //media3.gaggenau.com/Images/1200x/MCIM02561106_1x1-black-transparent.jpg 2x'
+                        type='image/jpeg'
+                        srcset='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.jpg, //media3.gaggenau.com/Images/1200x/MCIM02561106_1x1-black-transparent.jpg 2x'
+                      />
 
-        <Col>
+                      <img
+                        class=' lazyloaded'
+                        src='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.jpg'
+                        data-src='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.jpg'
+                      ></img>
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div id='schedule_form'>
             <div
               className='calendly-inline-widget'
@@ -309,7 +367,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
+
+      <Container></Container>
       {/* <FeaturesTiles /> */}
       {/* <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
       <Testimonial topDivider /> */}

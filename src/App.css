@@ -22369,8 +22369,8 @@ body.pagetype-article
 .m-contenttextmedia .content,
 .m-contenttextmedia .media,
 .m-contenttextmedia > .heading {
-  padding-left: 10px;
-  padding-right: 10px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
 }
 .m-contenttextmedia .content:only-child {
   display: block;
@@ -22508,7 +22508,7 @@ body.pagetype-article
   .m-contenttextmedia .content,
   .m-contenttextmedia .media,
   .m-contenttextmedia > .heading {
-    padding-left: 15px;
+    /* padding-left: 15px; */
     padding-right: 15px;
   }
   .m-contenttextmediabig .content {
@@ -38747,4 +38747,8 @@ a:hover {
 .active {
   background-color: #4caf50;
   color: white;
+}
+
+.content {
+  width: 50%;
 }
