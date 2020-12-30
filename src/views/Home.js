@@ -107,36 +107,32 @@ const Home = () => {
                     <ul class='first-level list-unstyled'>
                       <li class=''>
                         <a
-                          href='/experience'
+                          href='https://www.gaggenau.com/us/experience'
                           class='a-link has-child-level'
-                          data-link-hierarchy='Experience'
                         >
                           <span class='text'>Experience</span>
                         </a>
                       </li>
                       <li class=''>
                         <a
-                          href='/appliances'
+                          href='https://www.gaggenau.com/us/appliances'
                           class='a-link has-child-level'
-                          data-link-hierarchy='Appliances'
                         >
                           <span class='text'>Appliances</span>
                         </a>
                       </li>
                       <li class=''>
                         <a
-                          href='/contact'
+                          href='https://www.gaggenau.com/us/for-owners'
                           class='a-link has-child-level'
-                          data-link-hierarchy='Contact'
                         >
-                          <span class='text'>Contact</span>
+                          <span class='text'>For owners</span>
                         </a>
                       </li>
                       <li class=''>
                         <a
-                          href='/for-partners'
+                          href='https://www.gaggenau.com/us/for-partners'
                           class='a-link has-child-level'
-                          data-link-hierarchy='For partners'
                         >
                           <span class='text'>For partners</span>
                         </a>
@@ -147,10 +143,18 @@ const Home = () => {
               </div>
               <div class='topnav'>
                 <div id='myLinks'>
-                  <a href='#news'>Experience</a>
-                  <a href='#contact'>Appliances</a>
-                  <a href='#about'>Contact</a>
-                  <a href='#about'>For partners</a>
+                  <a href='https://www.gaggenau.com/us/experience'>
+                    Experience
+                  </a>
+                  <a href='https://www.gaggenau.com/us/appliances'>
+                    Appliances
+                  </a>
+                  <a href='https://www.gaggenau.com/us/for-owners'>
+                    For owners
+                  </a>
+                  <a href='https://www.gaggenau.com/us/for-partners'>
+                    For partners
+                  </a>
                 </div>
               </div>
             </div>

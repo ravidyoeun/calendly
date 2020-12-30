@@ -20282,9 +20282,6 @@ li > .a-button.a-link:before {
   content: none;
 }
 .a-button-link.a-button:not(.a-button):visited,
-.a-link:not(.a-button):visited {
-  color: #fff;
-}
 .a-button-link.a-button:not(.a-button):visited.a-link-secondary,
 .a-link:not(.a-button):visited.a-link-secondary {
   color: #fff;
