@@ -32856,7 +32856,7 @@ body.pagetype-campaign
   }
   .m-stage .teaser.bottom-left {
     bottom: 40%;
-    left: 10%;
+    left: 7%;
   }
   .m-stage .teaser.bottom-right {
     bottom: 10%;
@@ -38701,3 +38701,54 @@ a:hover {
   color: #e37222;
   text-decoration: none;
 }
+
+/* Style the navigation menu */
+@media (min-width: 900px) {
+  
+    .topnav {
+      float: right;
+      display: none;
+    }
+  }
+.topnav {
+  overflow: hidden;
+  background-color: #454545;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  padding: 14px 16px;
+  padding-left: 15px;
+  text-decoration: none;
+  display: block;
+  color: #aaa;
+  font-weight: 400;
+  text-align: left;
+  border-bottom: 1px solid #000;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  color: #e37222;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4caf50;
+  color: white;
+}
+
