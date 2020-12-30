@@ -38704,12 +38704,11 @@ a:hover {
 
 /* Style the navigation menu */
 @media (min-width: 900px) {
-  
-    .topnav {
-      float: right;
-      display: none;
-    }
+  .topnav {
+    float: right;
+    display: none;
   }
+}
 .topnav {
   overflow: hidden;
   background-color: #454545;
@@ -38723,7 +38722,7 @@ a:hover {
 
 /* Style navigation menu links */
 .topnav a {
-  padding: 14px 16px;
+  padding: 8px 16px;
   padding-left: 15px;
   text-decoration: none;
   display: block;
@@ -38751,4 +38750,3 @@ a:hover {
   background-color: #4caf50;
   color: white;
 }
-
