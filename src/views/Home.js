@@ -148,7 +148,8 @@ const Home = () => {
                     dynamicHeight={true}
                   >
                     <div>
-                      <img src='https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png' />
+                      {/* <img src='https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png' /> */}
+                      <img src={require("../assets/images/Image-ipad.png")} />
 
                       <div class='teaser bottom-left'>
                         <h2 class='a-heading'>
@@ -197,47 +198,91 @@ const Home = () => {
         </Jumbotron> */}
 
       <Container>
-        <Row>
-          <Col style={{ paddingTop: "40px" }}>
-            <h2>Contact us</h2>
-            <p>
-              If you are within your first year of Gaggenau ownership and would
-              like one-on-one virtual assistance, we would be happy to arrange
-              this. Simply call our Concierge Service, 949.724.3575, or email{" "}
-              <a
-                href='mailto:GaggenauConcierge@bshg.com'
-                target='_blank'
-                class='a-link a-link-external   a-link-inline'
-              >
-                <span class='text'> GaggenauConcierge@bshg.com</span>
-              </a>
-            </p>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <div id='schedule_form'>
-              <div
-                className='calendly-inline-widget'
-                data-url='https://www.seera.de/bsh-us/registration.php?backend=1&eid=100740&step=1'
-                style={{
-                  minWidth: "320px",
-                  height: "1218px",
-                  paddingTop: "40px",
-                }}
-              />
+        <Col style={{ paddingTop: "40px" }}>
+          <p>
+            Experience the Gaggenau Difference from the comfort of your home. We
+            are here to assist you in enjoying the full benefits of your new
+            Gaggenau purchase.
+          </p>
+          <p>
+            With the virtual assistance of a Gaggenau Ambassador, via Zoom or
+            FaceTime, we will share features and suggestions that will inspire
+            you— the home chef — to create masterpieces.{" "}
+          </p>
+          <p style={{ fontStyle: "italic" }}>
+            This service is only available within the first year of client
+            ownership from installations.
+          </p>
+          <p>The difference is Gaggenau.</p>
+        </Col>
+
+        <Col>
+          <div id='schedule_form'>
+            <div
+              className='calendly-inline-widget'
+              data-url='https://www.seera.de/bsh-us/registration.php?backend=1&eid=100740&step=1'
+              style={{
+                minWidth: "320px",
+                height: "1218px",
+                paddingTop: "40px",
+              }}
+            />
+          </div>
+        </Col>
+
+        <div
+          class='m-contentteaser '
+          data-t-name='ContentTeaser'
+          id='anc-5626184'
+        >
+          <div class='contentteaser-wrap a-area a-area-secondary a-area-mobile a-area-tablet a-area-desktop media-right'>
+            <div class='media'>
+              <div class='media-inner'>
+                <a href='/us/experience/showrooms'>
+                  <div class='a-image' data-t-name='Image' data-t-id='41'>
+                    <picture>
+                      <img
+                        class=' lazyloaded'
+                        src='//media3.gaggenau.com/Images/600x/MCIM03327712_Showroom_London_website-teaser.jpg'
+                        data-src='//media3.gaggenau.com/Images/600x/MCIM03327712_Showroom_London_website-teaser.jpg'
+                      />
+                    </picture>
+                  </div>
+                </a>
+              </div>
             </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col style={{ paddingTop: "40px" }}>
-            <p>
-              Experience the Gaggenau Difference from the comfort of your home.
-              We are here to assist you in enjoying the full benefits of your
-              new Gaggenau purchase.
-            </p>
-          </Col>
-        </Row>
+            <div class='content'>
+              <div class='content-inner'>
+                <div class='heading'>
+                  <h2 class='a-heading'>
+                    Experience the difference, the Gaggenau showroom
+                  </h2>
+                </div>
+
+                <p></p>
+                <p>
+                  Ultimately, you need to experience a Gaggenau appliance to
+                  truly appreciate its qualities. Find your nearest showroom to
+                  open an oven door and turn a solid stainless steel knob while
+                  sipping a cappuccino from our fully automatic espresso
+                  machine.
+                </p>
+                <p></p>
+
+                <ul class='list-unstyled'>
+                  <li>
+                    <a
+                      href='https://www.gaggenau.com/us/experience/showrooms'
+                      class='a-link a-link-local a-button a-button-primary '
+                    >
+                      <span class='text'>Your showroom</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </Container>
       {/* <FeaturesTiles /> */}
       {/* <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />

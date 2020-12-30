@@ -1797,6 +1797,12 @@ address {
   font-style: normal;
   margin-bottom: 10px;
 }
+
+@font-face {
+  font-family: "icons";
+  src: local("icons"), url(./fonts/icons.woff2) format("woff");
+}
+
 /* @font-face {
   font-family: icons;
   src: url(../fonts/icons.woff2) format("woff2"),
@@ -21106,7 +21112,7 @@ h2.a-heading {
 @media (min-width: 900px) {
   .a-heading.h2,
   h2.a-heading {
-    font-size: 30px;
+    font-size: 27px;
     letter-spacing: -0.433333px;
     line-height: 32px;
     margin: 0 0 30px;
@@ -37717,7 +37723,7 @@ body.pagetype-campaign
   .teaser-wrap.a-area.a-area-desktop
   .teaser-content
   h2.a-heading {
-  font-size: 30px;
+  font-size: 27px;
   line-height: 32px;
   letter-spacing: -0.433333px;
   height: auto !important;
@@ -38349,7 +38355,7 @@ body.pagetype-article .m-teaser.teaser-200-2 {
     .teaser-wrap.a-area.a-area-desktop
     .teaser-content
     h2.a-heading {
-    font-size: 30px;
+    font-size: 27px;
     line-height: 32px;
     letter-spacing: -0.433333px;
   }
@@ -38459,7 +38465,7 @@ body.pagetype-article
   .teaser-wrap.a-area.a-area-desktop
   .teaser-content
   h2.a-heading {
-  font-size: 30px;
+  font-size: 27px;
   line-height: 32px;
   letter-spacing: -0.433333px;
   color: #fff;
@@ -38586,7 +38592,7 @@ body.pagetype-article
     .teaser-wrap.a-area.a-area-desktop
     .teaser-content
     h2.a-heading {
-    font-size: 30px;
+    font-size: 27px;
     line-height: 32px;
     letter-spacing: -0.433333px;
   }
@@ -38660,16 +38666,33 @@ body.pagetype-product-detail
   border: none;
   margin: 0;
   padding: 0;
-} 
-@media (min-width: 641px){
-    h2, .h2 {
-        font-size: 30px;
-    }
-
-    div > h2 {
-        font-size: 30px;
-    }
 }
-h2, .h2 {
-    font-size: 30px;
+@media (min-width: 641px) {
+  h2,
+  .h2 {
+    font-size: 27px;
+  }
+
+  div > h2 {
+    font-size: 27px;
+  }
+}
+
+@font-face {
+  font-family: "Gaggenau";
+  src: local("Gaggenau"), url(./fonts/gaggenr-webfont.woff) format("woff");
+}
+
+h2,
+.h2 {
+  font-family: "Gaggenau";
+}
+
+p,
+.p {
+  font-family: "Gaggenau";
+}
+
+.text {
+  font-family: "Gaggenau";
 }
