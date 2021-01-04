@@ -10,7 +10,14 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { Jumbotron, Image, Container, Navbar, Row, Col } from "react-bootstrap";
 import TargetScroller from "react-target-scroller";
-
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 const Home = () => {
   const [dynamicCalendarUrl, setCalendarUrl] = useState(
     "https://calendly.com/bshpersona/irvine?primary_color=e37222"
@@ -70,6 +77,9 @@ const Home = () => {
       x.style.display = "block";
     }
   };
+  const scrollToBottom = () => {
+    scroll.scrollTo(1000);
+  };
   return (
     <>
       <div class='g-container'>
@@ -113,6 +123,7 @@ const Home = () => {
                         <a
                           href='https://www.gaggenau.com/us/experience'
                           class='a-link has-child-level'
+                          target='_blank'
                         >
                           <span class='text'>Experience</span>
                         </a>
@@ -121,6 +132,7 @@ const Home = () => {
                         <a
                           href='https://www.gaggenau.com/us/appliances'
                           class='a-link has-child-level'
+                          target='_blank'
                         >
                           <span class='text'>Appliances</span>
                         </a>
@@ -129,6 +141,7 @@ const Home = () => {
                         <a
                           href='https://www.gaggenau.com/us/for-owners'
                           class='a-link has-child-level'
+                          target='_blank'
                         >
                           <span class='text'>For owners</span>
                         </a>
@@ -137,6 +150,7 @@ const Home = () => {
                         <a
                           href='https://www.gaggenau.com/us/for-partners'
                           class='a-link has-child-level'
+                          target='_blank'
                         >
                           <span class='text'>For partners</span>
                         </a>
@@ -147,16 +161,28 @@ const Home = () => {
               </div>
               <div class='topnav'>
                 <div id='myLinks'>
-                  <a href='https://www.gaggenau.com/us/experience'>
+                  <a
+                    href='https://www.gaggenau.com/us/experience'
+                    target='_blank'
+                  >
                     Experience
                   </a>
-                  <a href='https://www.gaggenau.com/us/appliances'>
+                  <a
+                    href='https://www.gaggenau.com/us/appliances'
+                    target='_blank'
+                  >
                     Appliances
                   </a>
-                  <a href='https://www.gaggenau.com/us/for-owners'>
+                  <a
+                    href='https://www.gaggenau.com/us/for-owners'
+                    target='_blank'
+                  >
                     For owners
                   </a>
-                  <a href='https://www.gaggenau.com/us/for-partners'>
+                  <a
+                    href='https://www.gaggenau.com/us/for-partners'
+                    target='_blank'
+                  >
                     For partners
                   </a>
                 </div>
@@ -195,6 +221,7 @@ const Home = () => {
                       {/* <p className='legend'>Book your invervention request online</p> */}
                     </div>
                   </Carousel>
+
                   <div
                     class='m-scrolldown js-scrolldown hidden-mobile is-active'
                     data-t-name='ScrollDown'
@@ -202,6 +229,7 @@ const Home = () => {
                     data-scroll-offset='80'
                     data-t-id='21'
                     target='#schedule_form'
+                    onClick={scrollToBottom}
                   >
                     <span class='scrolldown-text'>Scroll down</span>
                     <span class='scrolldown-arrow'></span>
@@ -308,7 +336,6 @@ const Home = () => {
               style={{
                 minWidth: "320px",
                 height: "1218px",
-                paddingTop: "40px",
               }}
             />
           </div>

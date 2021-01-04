@@ -86,14 +86,17 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
               </li>
 
               <li>
-                <a href='/us/general/legal' class='a-link a-link-local   '>
+                <a
+                  href='http://www.gaggenau.com/us/general/legal'
+                  class='a-link a-link-local   '
+                >
                   <span class='text'>Legal</span>
                 </a>
               </li>
 
               <li>
                 <a
-                  href='/us/general/privacy-policy'
+                  href='http://www.gaggenau.com/us/general/privacy-policy'
                   class='a-link a-link-local   '
                 >
                   <span class='text'>
@@ -103,7 +106,11 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
               </li>
 
               <li>
-                <a href='/us/general/eshop-faqs' class='a-link a-link-local   '>
+                <a
+                  href='http://www.gaggenau.com/us/general/eshop-faqs'
+                  class='a-link a-link-local   '
+                  target='_blank'
+                >
                   <span class='text'>eShop FAQs</span>
                 </a>
               </li>
@@ -140,8 +147,9 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
 
               <li>
                 <a
-                  href='/us/general/ada-website-accessibility'
+                  href='http://www.gaggenau.com/us/general/ada-website-accessibility'
                   class='a-link a-link-local   '
+                  target='_blank'
                 >
                   <span class='text'>ADA Website Accessibility</span>
                 </a>
@@ -152,15 +160,6 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
                   href='https://psirt.bosch.com/report-a-vulnerability/'
                   target='_blank'
                   class='a-link a-link-external   '
-                >
-                  <span class='text'>Report a Vulnerability</span>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href='/us/general/report-vulnerability'
-                  class='a-link a-link-local   '
                 >
                   <span class='text'>Report a Vulnerability</span>
                 </a>

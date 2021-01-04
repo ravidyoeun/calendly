@@ -38752,3 +38752,16 @@ a:hover {
 .content {
   width: 50%;
 }
+
+a:hover {
+  color: #fff !important;
+}
+
+#button:hover {
+  background-color: #e37222 !important;
+  color: #fff;
+}
+
+#anc-5626184 > div > div.content > div > ul > li > a:hover {
+  background-color: #e37222 !important;
+}
