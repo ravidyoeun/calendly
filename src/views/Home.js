@@ -332,7 +332,7 @@ const Home = () => {
           <div id='schedule_form'>
             <div
               className='calendly-inline-widget'
-              data-url='https://www.seera.de/bsh-us/registration.php?backend=1&eid=100740&step=1'
+              data-url='https://www.seera.de/bsh-us/registration.php?backend=1&eid=100747&step=1'
               style={{
                 minWidth: "320px",
                 height: "1218px",
