@@ -38676,9 +38676,24 @@ body.pagetype-product-detail
   }
 }
 
-@font-face {
+/* @font-face {
   font-family: "Gaggenau";
   src: local("Gaggenau"), url(./fonts/gaggenr-webfont.woff) format("woff");
+} */
+
+@font-face {
+  font-family: Gaggenau;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts/gaggenr-webfont.woff) format("woff"),
+    url(./fonts/gaggenr-webfont.ttf) format("truetype");
+}
+@font-face {
+  font-family: Gaggenau;
+  font-style: normal;
+  font-weight: 700;
+  src: url(./fonts/gaggenb-webfont.woff) format("woff"),
+    url(./fonts/gaggenb-webfont.ttf) format("truetype");
 }
 
 h2,
@@ -38762,4 +38777,8 @@ a:hover {
   background-color: #e37222 !important;
 
   color: #fff !important;
+}
+
+.m-scrolldown.is-hidden {
+  opacity: 0;
 }

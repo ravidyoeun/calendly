@@ -1,4 +1,10 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, {
+  useRef,
+  useEffect,
+  useState,
+  componentDidMount,
+  componentWillUnmount,
+} from "react";
 // import sections
 import Hero from "../components/sections/Hero";
 import FeaturesTiles from "../components/sections/FeaturesTiles";
@@ -24,6 +30,8 @@ const Home = () => {
   );
 
   const [scrollTarget, setScrollTarget] = useState(null);
+  const [scrollPos, setScrollPos] = useState(0);
+  const [show, setShow] = useState(true);
   // <div class="calendly-inline-widget" data-url="https://calendly.com/bshpersona/bosch-calendar?primary_color=e37222" style="min-width:320px;height:630px;"></div>
   // <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
   useEffect(() => {
@@ -78,8 +86,51 @@ const Home = () => {
     }
   };
   const scrollToBottom = () => {
-    scroll.scrollTo(1000);
+    //scroll.scrollTo(1000);
+
+    setScrollPos(document.body.getBoundingClientRect().top);
+    console.log("setScrollPos", scrollPos);
+    console.log(
+      "document.body.getBoundingClientRect().top > scrollPos",
+      document.body.getBoundingClientRect().top > scrollPos
+    );
+    setShow(document.body.getBoundingClientRect().top > scrollPos);
+    // this.setState({
+    //   scrollPos: document.body.getBoundingClientRect().top,
+    //   show: document.body.getBoundingClientRect().top > scrollPos
+    // });
   };
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
+  const scrollTo = () => {
+    scroll.scrollTo(400);
+  };
+  const scrollMore = () => {
+    scroll.scrollMore(100);
+  };
+  const handleSetActive = (to) => {
+    console.log(to);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", scrollToBottom);
+
+    Events.scrollEvent.register("begin", function (to, element) {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register("end", function (to, element) {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
+
+    Events.scrollEvent.remove("begin");
+    Events.scrollEvent.remove("end");
+  });
+
   return (
     <>
       <div class='g-container'>
@@ -207,7 +258,7 @@ const Home = () => {
                       {/* <img src='https://media3.bsh-group.com/Images/4000x/16532371_Image_ipad.png' /> */}
                       <img
                         src={require("../assets/images/Image-ipad.png")}
-                        style={{ maxHeight: "960px" }}
+                        style={{ maxHeight: "760px" }}
                       />
 
                       <div class='teaser bottom-left'>
@@ -221,19 +272,29 @@ const Home = () => {
                       {/* <p className='legend'>Book your invervention request online</p> */}
                     </div>
                   </Carousel>
-
-                  <div
-                    class='m-scrolldown js-scrolldown hidden-mobile is-active'
-                    data-t-name='ScrollDown'
-                    data-scrolldown-tolerance='50'
-                    data-scroll-offset='80'
-                    data-t-id='21'
-                    target='#schedule_form'
-                    onClick={scrollToBottom}
+                  <Link
+                    activeClass='active'
+                    to='calendar'
+                    spy={true}
+                    smooth={true}
+                    onClick={scrollTo}
                   >
-                    <span class='scrolldown-text'>Scroll down</span>
-                    <span class='scrolldown-arrow'></span>
-                  </div>
+                    <div
+                      data-t-name='ScrollDown'
+                      data-scrolldown-tolerance='50'
+                      data-scroll-offset='80'
+                      data-t-id='21'
+                      target='#schedule_form'
+                      className={
+                        show
+                          ? "m-scrolldown js-scrolldown hidden-mobile is-active"
+                          : "m-scrolldown js-scrolldown hidden-mobile is-hidden"
+                      }
+                    >
+                      <span class='scrolldown-text'>Scroll down</span>
+                      <span class='scrolldown-arrow'></span>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -274,7 +335,7 @@ const Home = () => {
                         This service is only available within the first year of
                         client ownership from installations.
                       </p>
-                      <p>The difference is Gaggenau.</p>
+                      <p>&nbsp; The difference is Gaggenau.</p>
                     </div>
                   </div>
                 </div>
@@ -335,7 +396,7 @@ const Home = () => {
               data-url='https://www.seera.de/bsh-us/registration.php?backend=1&eid=100747&step=1'
               style={{
                 minWidth: "320px",
-                height: "1218px",
+                height: "978px",
               }}
             />
           </div>
