@@ -94,7 +94,7 @@ const Home = () => {
       "document.body.getBoundingClientRect().top > scrollPos",
       document.body.getBoundingClientRect().top > scrollPos
     );
-    setShow(document.body.getBoundingClientRect().top > scrollPos);
+    setShow(document.body.getBoundingClientRect().top == 0);
     // this.setState({
     //   scrollPos: document.body.getBoundingClientRect().top,
     //   show: document.body.getBoundingClientRect().top > scrollPos
