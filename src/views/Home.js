@@ -139,7 +139,7 @@ const Home = () => {
             <div class='header-elements g-col'></div>
             <div class='identifier-logo'>
               <a
-                href='https://wwww.gaggenau.com/us'
+                href='https://www.gaggenau.com/us'
                 class='a-logo'
                 target='_blank'
               >
@@ -335,7 +335,8 @@ const Home = () => {
                         This service is only available within the first year of
                         client ownership from installations.
                       </p>
-                      <p>&nbsp; The difference is Gaggenau.</p>
+                      <p></p>
+                      <p>The difference is Gaggenau.</p>
                     </div>
                   </div>
                 </div>
