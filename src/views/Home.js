@@ -16,6 +16,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { Jumbotron, Image, Container, Navbar, Row, Col } from "react-bootstrap";
 import TargetScroller from "react-target-scroller";
+import IframeResizer from "iframe-resizer-react";
 import {
   Link,
   Element,
@@ -391,14 +392,14 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div id='schedule_form'>
-            <div
-              className='calendly-inline-widget'
-              data-url='https://www.seera.de/bsh-us/registration.php?backend=1&eid=100747&step=1'
-              style={{
-                minWidth: "320px",
-                height: "978px",
-              }}
+          <div id='schedule_form' className='resp-container'>
+            <iframe
+              className='resp-iframe'
+              src='https://www.seera.de/bsh-us/registration.php?backend=1&eid=100747&step=1'
+              // style={{
+              //   minWidth: "320px",
+              //   height: "978px",
+              // }}
             />
           </div>
         </Col>
