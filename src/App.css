@@ -32799,7 +32799,7 @@ body.pagetype-campaign
   }
 }
 
-@media (min-width: 375px) {
+/* @media (min-width: 375px) {
   .m-stage .teaser.bottom-left {
     bottom: 29%;
     left: 6%;
@@ -32818,7 +32818,7 @@ body.pagetype-campaign
     top: auto;
     width: 326px;
   }
-}
+} */
 
 @media (min-width: 500px) {
   .m-stage .a-paginationdots {
@@ -38797,4 +38797,5 @@ a:hover {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
+  min-height: 553px;
 }
