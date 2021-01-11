@@ -263,10 +263,7 @@ const Home = () => {
                       />
 
                       <div class='teaser bottom-left'>
-                        <h2
-                          class='a-heading'
-                          style={{ fontSize: "40px", fontWeight: 700 }}
-                        >
+                        <h2 class='a-heading'>
                           Book Your Virtual Professional In-Home Introduction
                         </h2>
                       </div>

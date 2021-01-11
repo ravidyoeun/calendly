@@ -32853,8 +32853,8 @@ body.pagetype-campaign
     top: 10%;
   }
   .m-stage .teaser.bottom-left {
-    bottom: 40%;
-    left: 7%;
+    /* bottom: 40%;
+    left: 7%; */
   }
   .m-stage .teaser.bottom-right {
     bottom: 10%;
@@ -38798,4 +38798,31 @@ a:hover {
   overflow: hidden;
   padding-top: 56.25%;
   min-height: 553px;
+}
+
+@media (min-width: 900px) {
+  #root
+    > main
+    > div.g-container
+    > header
+    > div.header-content.g-col
+    > div
+    > div
+    > div
+    > div
+    > div
+    > ul
+    > li
+    > div
+    > div
+    > h2 {
+    font-size: 40px;
+    letter-spacing: -0.566667px;
+    line-height: 42px;
+    font-weight: 700;
+  }
+}
+
+.m-stage .teaser h2.a-heading {
+  font-weight: 700;
 }
