@@ -137,6 +137,10 @@ const Home = () => {
       <div class='g-container'>
         <>
           <header class='o-header o-header-sticky g-layout-full stage'>
+            <h1 style={{ display: "none" }}>
+              {" "}
+              Book Your Virtual Professional In-Home Introduction
+            </h1>
             <div class='header-elements g-col'></div>
             <div class='identifier-logo'>
               <a
@@ -147,7 +151,7 @@ const Home = () => {
                 <div class='a-image'>
                   <picture>
                     <img
-                      alt=''
+                      alt='Gaggenau Virtual Assistance - Set up a call with a Gaggenau Specialist'
                       src={require("../assets/images/gaggenau-logo.png")}
                       style={{ width: "auto" }}
                       alt='Open'
@@ -260,6 +264,7 @@ const Home = () => {
                       <img
                         src={require("../assets/images/Image-ipad.png")}
                         style={{ maxHeight: "760px" }}
+                        alt='Gaggenau Virtual Assistance - Set up a call with a Gaggenau Specialist'
                       />
 
                       <div class='teaser bottom-left'>
@@ -382,6 +387,7 @@ const Home = () => {
                         class=' lazyloaded'
                         src='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.jpg'
                         data-src='//media3.gaggenau.com/Images/600x/MCIM02561106_1x1-black-transparent.jpg'
+                        alt='  Book Your Virtual Professional In-Home Introduction'
                       ></img>
                     </picture>
                   </div>
@@ -416,6 +422,7 @@ const Home = () => {
                         class=' lazyloaded'
                         src='//media3.gaggenau.com/Images/600x/MCIM03327712_Showroom_London_website-teaser.jpg'
                         data-src='//media3.gaggenau.com/Images/600x/MCIM03327712_Showroom_London_website-teaser.jpg'
+                        alt='London Showroom'
                       />
                     </picture>
                   </div>
