@@ -332,9 +332,9 @@ const Home = () => {
                       </p>
                       <p>
                         With the virtual assistance of a Gaggenau Ambassador,
-                        via Zoom or FaceTime, we will share features and
-                        suggestions that will inspire you— the home chef — to
-                        create masterpieces.{" "}
+                        via Zoom, we will share features and suggestions that
+                        will inspire you— the home chef — to create
+                        masterpieces.{" "}
                       </p>
                       <p style={{ fontStyle: "italic" }}>
                         This service is only available within the first year of
