@@ -177,38 +177,40 @@ const Home = () => {
                     <ul class='first-level list-unstyled'>
                       <li class=''>
                         <a
-                          href='https://www.gaggenau.com/us/experience'
+                          href='https://www.gaggenau.com/us/appliances/eshop'
                           class='a-link has-child-level'
                           target='_blank'
                         >
-                          <span class='text'>Experience</span>
+                          <span class='text'>E-Shop</span>
                         </a>
                       </li>
                       <li class=''>
                         <a
-                          href='https://www.gaggenau.com/us/appliances'
+                          href='https://www.gaggenau.com/us/for-owners/know-more/gaggenau-recipes'
                           class='a-link has-child-level'
                           target='_blank'
                         >
-                          <span class='text'>Appliances</span>
+                          <span class='text'>Recipes</span>
                         </a>
                       </li>
                       <li class=''>
                         <a
-                          href='https://www.gaggenau.com/us/for-owners'
+                          href='https://www.gaggenau.com/us/for-owners/know-more/mastering-your-gaggenau'
                           class='a-link has-child-level'
                           target='_blank'
                         >
-                          <span class='text'>For owners</span>
+                          <span class='text'>
+                            Mastering Your Gaggenau Videos
+                          </span>
                         </a>
                       </li>
                       <li class=''>
                         <a
-                          href='https://www.gaggenau.com/us/for-partners'
+                          href='https://www.gaggenau.com/us/for-owners/know-more/use-and-care-manuals'
                           class='a-link has-child-level'
                           target='_blank'
                         >
-                          <span class='text'>For partners</span>
+                          <span class='text'>Use and Care Manuals</span>
                         </a>
                       </li>
                     </ul>
@@ -218,28 +220,28 @@ const Home = () => {
               <div class='topnav'>
                 <div id='myLinks'>
                   <a
-                    href='https://www.gaggenau.com/us/experience'
+                    href='https://www.gaggenau.com/us/appliances/eshop'
                     target='_blank'
                   >
-                    Experience
+                    E-Shop
                   </a>
                   <a
-                    href='https://www.gaggenau.com/us/appliances'
+                    href='https://www.gaggenau.com/us/for-owners/know-more/gaggenau-recipes'
                     target='_blank'
                   >
-                    Appliances
+                    Recipes
                   </a>
                   <a
-                    href='https://www.gaggenau.com/us/for-owners'
+                    href='https://www.gaggenau.com/us/for-owners/know-more/mastering-your-gaggenau'
                     target='_blank'
                   >
-                    For owners
+                    Mastering Your Gaggenau Videos
                   </a>
                   <a
-                    href='https://www.gaggenau.com/us/for-partners'
+                    href='https://www.gaggenau.com/us/for-owners/know-more/use-and-care-manuals'
                     target='_blank'
                   >
-                    For partners
+                    Use and Care Manuals
                   </a>
                 </div>
               </div>
